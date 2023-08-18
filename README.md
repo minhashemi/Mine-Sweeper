@@ -1,96 +1,60 @@
-# MineSweeper CLI Version
-## Video Demo:
-https://youtu.be/ppbeVFmIp8U
-## About:
-The Project was developed under super vision of Prof. Alireza Aghamohammadi by Amin Hashemi (@minhashemi)
+# MineSweeper CLI Adventure
+## 🕹️ Experience the Classic Game with a Twist!
 
-CS50P, Spring 2021
+Dive into the captivating world of MineSweeper with a modern twist that'll keep you engaged for hours. Unearth hidden treasures and strategize your moves to conquer the board without triggering a single bomb! ⚡️
 
-## Description:
+### 🔗 [Watch the Thrilling Video Demo](https://youtu.be/ppbeVFmIp8U)
 
-Main Page
----------
+## About the Mastermind Behind the Game
 
-Open as many cells as you can without hitting a bomb 💣
+Crafted under the visionary guidance of Prof. Alireza Aghamohammadi, this game is the brainchild of Amin Hashemi (@minhashemi). It emerged during the CS50P Spring 2021, bringing innovation and excitement to the classic MineSweeper experience.
 
-By running the project, the following menu will be shown in which you will see name of the project written in ASCII art using the pyfiglet module and 4 choices as mentioned below:
+## Unveiling the Gameplay
 
-1.  Login
-2.  Sign Up
-3.  Score Board
-4.  Exit
+### 🎮 Step into the Challenge
 
-Login
------
+As you embark on this exciting journey, the immersive world of MineSweeper unfolds before you. Prepare to be enchanted by a mesmerizing ASCII art rendition of the project's title, elegantly crafted using the pyfiglet module. Your adventure starts with a choice:
 
-here you will have a choice to enter credentials to login, go to sign up menu or to return into main menu
+1. 🔑 Login
+2. 📝 Sign Up
+3. 🏆 Score Board
+4. 🚪 Exit
 
-when you try to enter credentials to login, you will be asked for your username and if the username doesn't exists in user database, you will be asked to register first. Unless you will be asked for your password and if the password matches, you are welcome to select game level and play.
+### 🔐 Forge Your Path
 
-Note that if no users exist in the user database, you will be asked to register first.
+**Login**: Choose your destiny. Enter your credentials to step into the mines, or venture into the realm of Sign Up to begin your epic journey.
 
-Sign Up
--------
+**Sign Up**: A world of possibilities awaits. Forge your unique identity with a distinct username and a well-guarded password. Your secrets are safe, thanks to an ingenious encryption technique using the base64 library. Your tale is etched in a CSV tapestry.
 
-In this menu, you will have a choice to enter your credentials or to get back to main menu
+**Score Board**: Where legends are inscribed. Witness the rise and fall of scores, where heroes are ranked and celebrated. The enchanting orchestration of the pandas library weaves this magical tapestry.
 
-if you choose to enter your credentials, you will be asked to choose a username. If the username already exists in user database you will be prompted to try again by choosing another username. Unless you will be prompted to choose a password. CS50 Podcast encouraged me to encrypt passwords. So in this program, passwords are encrypted using base64 library. So not easily breakable :)
-all user data is kept in a csv file.
+### ⚔️ Master the Mines
 
-Game Play
----------
+Eager to embark on the MineSweeper expedition? Traverse through three challenging levels:
 
-Game is developed in 3 levels.
+- 🌟 Beginner: Conquer the $10\times10$ game board.
+- 🌠 Intermediate: Uncover mysteries on the $15\times15$ game board.
+- 🌌 Advanced: Tackle the epic $25\times25$ game board.
 
--   Beginner: $10\times10$ game board
--   Intermediate: $15\times15$ game board
--   Advanced: $25\times25$ game board
+As your journey commences, a mysterious landscape unfolds, covered in concealed cells denoted by `*`. Will you unveil a safe passage or chance upon a treacherous bomb marked by `x`? The game board, orchestrated by the GameBoard class, navigates you through the labyrinth of fate.
 
-game board is instantiated from the GameBoard class which manages to create, display and manage all game logic.
+🎮 Pro Tip: Developers can customize the game board dimensions with a simple tweak in the `play` function.
 
-<aside> 🛠 To Developers: you can easily config the game to have a $x \times y$ table by making the game board instantiation optional in `play` function.
+### 🎖️ Rise to Glory
 
-</aside>
+Every move carries weight. With each safe cell revealed, 10 points grace your conquest. But beware the bombs – a misstep might lead to your doom. Victorious or vanquished, your score and destiny find their place on the hallowed Score Board.
 
-<br />
+## 🛠️ Behind the Scenes: Developer's Delight
 
-in the beginning, all cells are hidden with `*` sign and you can enter the coordinate of the cell you want to open as `<row> <col>` or flag a cell by `<row> <col> F`
+Venture into the heart of creation:
 
-the game logic is like the classic MineSweeper game. and bombs are shown with `x`. at least 10% and at most 30% of cells are bombs.
+- 📋 Discover dependencies within `requirements.txt`, your guide to a seamless setup.
+- 🌟 Harness the power of `pandas` for sorting and arranging the majestic Score Board.
+- 🎨 The enchanting artistry of ASCII awaits with `pyfiglet`.
+- 🗄️ Your journey is documented within `test_project.py`, where pre-written functions await testing. Feel free to inscribe your own legends.
 
-for each cell you open and that is not a bomb, you will gain 10 points.
+## 🌐 Journey Through userdb.csv
 
-after you lose or get a victory, you will be shown the updated score board.
+This realm houses usernames, encrypted passwords, and scores. An epic tale of warriors and their feats is chronicled within. If the gates are yet to open, fear not – our code shall conjure them into existence.
 
-Score Board
------------
-
-Score board is sorted and saved each time the score changes based on scores and if there exists some users with same score, they will be sorted based on usernames alphabetically.
-all sorting stuff of this menu, will be done by `pandas` library.
-
-scoreboard style is printed using tabulate module.
-
-Exit
-----
-Will always quit the game using `sys.exit`
-
-requirements.txt
-----------------
-
-all required pip installable modules are being written in this file which is available in the source directory of the project.
-
-`pip install pandas`
-
-`pip install pyfiglet`
-
-`pip install tabulate`
-
-test_project.py
----------------
-
-you can test some of the functions of this project using pre-written functions using the `pytest test_project.py`
-you are welcome to implement your own test cases as well.
-
-userdb.csv
-----------
-Username, encrypted password and total score of a user is kept inside this file. If it doesn't exist, the program will make it first.
+Dive into the adventure, stake your claim, and etch your name in the annals of MineSweeper glory! 🚀
