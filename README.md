@@ -2,7 +2,8 @@
 ## Video Demo:
 https://youtu.be/ppbeVFmIp8U
 ## About:
-The Project is developed by Amin Hashemi (@minhashemi)
+The Project was developed under super vision of Prof. Alireza Aghamohammadi by Amin Hashemi (@minhashemi)
+
 CS50P, Spring 2021
 
 ## Description:
