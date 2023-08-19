@@ -1,4 +1,4 @@
-# MineSweeper CLI Adventure
+# 💣 Mine Sweeper: CLI Mine Mastery
 ## 🕹️ Experience the Classic Game with a Twist!
 
 Dive into the captivating world of MineSweeper with a modern twist that'll keep you engaged for hours. Unearth hidden treasures and strategize your moves to conquer the board without triggering a single bomb! ⚡️
